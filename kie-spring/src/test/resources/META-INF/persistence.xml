@@ -7,7 +7,6 @@
 
   <persistence-unit name="org.drools.persistence.jpa.local" transaction-type="RESOURCE_LOCAL">
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
-    <mapping-file>META-INF/ProcessInstanceInfo.hbm.xml</mapping-file>
     <!--
     <jta-data-source>jdbc/testDS1</jta-data-source>
     -->

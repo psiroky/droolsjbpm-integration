@@ -15,6 +15,7 @@
 
 package org.kie.remote.services.rest.query;
 
+import java.sql.DatabaseMetaData;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -24,7 +25,6 @@ import java.util.UUID;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.codehaus.jackson.map.ObjectMapper;
-import org.hibernate.tool.hbm2ddl.DatabaseMetadata;
 import org.jbpm.process.audit.AuditLogService;
 import org.jbpm.process.audit.JPAAuditLogService;
 import org.jbpm.process.audit.VariableInstanceLog;
@@ -70,7 +70,7 @@ abstract class AbstractQueryResourceTest extends JbpmJUnitBaseTestCase {
     public AbstractQueryResourceTest() {
         super(true, true, "org.jbpm.domain");
 
-        Logger logger = LoggerFactory.getLogger(DatabaseMetadata.class);
+        Logger logger = LoggerFactory.getLogger(DatabaseMetaData.class);
         if( logger instanceof ch.qos.logback.classic.Logger ) {
             ((ch.qos.logback.classic.Logger) logger).setLevel(Level.OFF);
         }

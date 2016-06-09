@@ -38,7 +38,7 @@
     <karaf.version.org.apache.geronimo.specs.servlet>1.0</karaf.version.org.apache.geronimo.specs.servlet>
     <karaf.version.javax.servlet>3.1.0</karaf.version.javax.servlet>
     <karaf.version.org.apache.geronimo.specs.jms>1.1.1</karaf.version.org.apache.geronimo.specs.jms>
-    <karaf.version.org.apache.geronimo.specs.jpa>1.1</karaf.version.org.apache.geronimo.specs.jpa>
+    <karaf.version.org.apache.geronimo.specs.jpa>1.0-alpha-1</karaf.version.org.apache.geronimo.specs.jpa>
     <karaf.version.org.apache.geronimo.specs.jta>1.1.1</karaf.version.org.apache.geronimo.specs.jta>
     <karaf.version.org.jboss.spec.javax.el.jboss-el-api_3.0_spec>${version.org.jboss.spec.javax.el.jboss-el-api_3.0_spec}</karaf.version.org.jboss.spec.javax.el.jboss-el-api_3.0_spec>
     <!-- used by optaplanner -->
@@ -115,7 +115,7 @@
       </dependency>
       <dependency>
         <groupId>org.apache.geronimo.specs</groupId>
-        <artifactId>geronimo-jpa_2.0_spec</artifactId>
+        <artifactId>geronimo-jpa_2.1_spec</artifactId>
         <version>${karaf.version.org.apache.geronimo.specs.jpa}</version>
       </dependency>
       <dependency>
@@ -464,7 +464,7 @@
     </dependency>
     <dependency>
       <groupId>org.apache.geronimo.specs</groupId>
-      <artifactId>geronimo-jpa_2.0_spec</artifactId>
+      <artifactId>geronimo-jpa_2.1_spec</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
